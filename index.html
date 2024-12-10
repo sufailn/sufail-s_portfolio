@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            
+            <ul>
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="#portfolio-loc">projects</a></li>
+                <li><a href="#skills-loc">Skills</a></li>
+                <li><a href="#contact-loc">Contact</a></li>
+            </ul>
+          
+        </nav>
+        <div class="landing">
+            <div class="intro">
+                <h3>I'M <Span>Sufail Ahammed N</Span><br>Web & App Developer<br></h3>
+                <button onclick="window.location.href='mailto:sufailahammed316@gmail.com'">Contact Me</button>
+            </div>
+            <div class="socials">
+                <div class="line"></div>
+                <a href="https://www.instagram.com/sufail__ahmd/profilecard/?igsh=MWg1emU1cncwOTNnMQ=="><i class="ri-instagram-fill"></i></a>
+                <a href="https://github.com/sufailn"><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/sufail-ahammed-n/"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://wa.me/919562026070"><i class="ri-whatsapp-line"></i></a>
+                <a href="https://vercel.com/sufailn"><i class="ri-vercel-fill"></i></a>
+
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <h1>About</h1>
+        <div class="description">
+            <div class="line"></div>
+            <p>
+                <i>
+                    Hello! I'm <strong>Sufail Ahammed N</strong>, a dedicated software developer with an MCA degree and specialized expertise in the MEAN stack. I’m driven by a passion for solving complex challenges and leveraging emerging technologies to develop impactful solutions. Always eager to expand my skill set, I aim to contribute to projects that make a difference. Check out my portfolio to see some of my recent work!
+                </i>
+            </p>
+        </div>
+    </section>
+    <section class="skills" id="skills-loc">
+        <h1>My Skills</h1>
+        <div class="cards">
+            <div class="skill-card">
+                <img src="asset/angular-icon.webp" alt="">
+                <h2>Angular</h2>
+            </div>
+            
+            <div class="skill-card">
+                <img src="asset/css.svg" alt="">
+                <h2>CSS</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/react-js-icon.webp" alt="">
+                <h2>React js</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/nextjs-icon.webp" alt="">
+                <h2>Nextjs</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/flutter.svg" alt="">
+                <h2>Flutter</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/git.svg" alt="">
+                <h2>GIT</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/html.svg" alt="">
+                <h2>HTML</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/js.svg" alt="">
+                <h2>JavaScript</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/tailwind-css-icon.webp" alt="">
+                <h2>Tailwind</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/mongodb.svg" alt="">
+                <h2>MongoDB</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/express-js-icon.webp" alt="">
+                <h2>Express js</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/nodejs.svg" alt="">
+                <h2>NodeJS</h2>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio-loc">
+        <h1>Projects</h1>
+        <div class="portfolio-cards">
+            <div class="portfolio-card">
+                <img src="asset/images/doctor-appointment.jpg" alt="">
+                <div class="overlay">
+                    <h3>Doctor Appointment</h3>
+                    <ul class="description" style="display: none;">
+                        <li>The Doctor Appointment Management System, built with the MEAN stack, streamlines hospital appointment booking.</li>
+                        <li>It features three main sections: Appointments, Doctors, and Patients.</li>
+                    </ul>
+                    <button onclick="toggleDescription(this)">See More -></button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="asset/images/bank-app.jpg" alt="">
+                <div class="overlay">
+                    <h3>Bank App</h3>
+                    <ul class="description" style="display: none;">
+                        <li>Developed a robust, secure banking application utilizing Angular, TypeScript, and JSON Server, enhancing user experience with a responsive Angular Material UI.</li>
+                    </ul>
+                    <button onclick="toggleDescription(this)">See More -></button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="asset/images/todo-app.jpg" alt="">
+                <div class="overlay">
+                    <h3>ToDoApp</h3>
+                    <ul class="description" style="display: none;">
+                        <li>Developed a task management application using Angular, HTML, and CSS, enabling users to create, edit, prioritize, and track tasks with an intuitive interface, enhancing user experience and productivity.</li>
+                        <li>Implemented real-time collaboration features, allowing users to share tasks and receive updates, which improved team communication and task completion rates by 40%.</li>
+                    </ul>
+                    <button onclick="toggleDescription(this)">See More -></button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="asset/images/smart-licence.jpg" alt="">
+                <div class="overlay">
+                    <h3>Smart Licence</h3>
+                    <ul class="description" style="display: none;">
+                        <li>Developed a vehicle safety system using Python (Flask), Dart (Flutter), and SQLYog with RFID-based authentication, reducing unauthorized access by 50%.</li>
+                        <li>Integrated alcohol detection sensors with Arduino, achieving a 100% detection rate in trials.</li>
+                    </ul>
+                    <button onclick="toggleDescription(this)">See More -></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="experience">
+        <div class="darker-div"></div>
+        <h1>Experience</h1>
+        <div class="lighter-div">
+            <div class="exp">
+                <h2>Junior MEAN Stack Developer Intern</h2>
+                <div class="exp-desc">
+                    <h3>Inmakes Infotech Pvt.Ltd</h3>
+                   <ul>
+                    <li>
+                        Developed a MEAN stack web app, increasing user
+                        engagement by 25% through optimized design and backend.
+                    </li>
+                    <li>
+                        Designed and deployed 10+ APIs, improving functionality and reducing errors by 20%.
+                    </li>
+                   </ul>
+                </div>
+            </div>
+            <div class="exp">
+                <h2>Freelance Works</h2>
+                <div class="exp-desc">
+                    <h3>GlideAway Migration Service</h3>
+                    <ul>
+                        <li>
+                            Designed and developed a responsive web page for a Visa
+                            Services business using HTML, Tailwind CSS, and custom
+                            styling.
+                        </li>
+                        <li>
+                            <a href="https://www.glidewaymigration.com/" target="_blank">Visit GlideAway Migration</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="exp-desc">
+                    <h3>Legend Intermediate</h3>
+                    <ul>
+                        <li>
+                            Designed and implemented responsive UI components
+                            using Tailwind CSS for an interactive product showcase.
+                        </li>
+                        <li>
+                            <a href="https://www.legendfoods.ae/" target="_blank">Visit Legend Foods</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="contact-me" id="contact-loc">
+        <h1>Contact Me</h1>
+        <div class="contact">
+            <div class="contact-card">
+                <i class="ri-message-3-line"></i>
+                <p>sufailahammed316@gmail.com</p>
+            </div>
+            <div class="contact-card">
+                <i class="ri-phone-line"></i>
+                <p>+91 9562026070</p>
+            </div>
+            <div class="contact-card">
+                <i class="ri-map-pin-3-line"></i>
+                <p>Kerala, India</p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
